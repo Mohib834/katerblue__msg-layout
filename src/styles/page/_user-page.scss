@@ -1,0 +1,33 @@
+#sidebar{
+    flex: 0 0 18%;
+    box-shadow:$shadow-light;
+    height:100vh;
+}
+
+
+#menu{
+    span{
+        font-size:1.5rem;
+        letter-spacing: 1px;
+        padding-left:1rem;
+    }
+    ul > li{
+        font-size:1.4rem;
+        padding: .5rem 0 .5rem 1rem;
+    }
+    
+    .active-link{
+        border-left:3px solid $primary;
+        background:rgba($primary,.1);
+        font-weight: bold;
+        a{
+            margin-left:-.4rem;
+            color:$primary !important;
+        }
+    }
+}
+
+#main {
+    flex: 1;
+}
+
