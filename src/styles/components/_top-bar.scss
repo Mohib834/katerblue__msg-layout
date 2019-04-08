@@ -24,7 +24,12 @@
         right:-0.3rem;
     }
 
-    &__img{
+    &__user{
+
+    }
+
+    &__user-img{
         box-shadow:0 0.5px 0.4rem rgba($primary,.5);
+        // padding:0 2rem;
     }
 }

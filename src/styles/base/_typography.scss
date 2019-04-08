@@ -4,10 +4,21 @@ html{
 
 body{
     font-size:16px;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
 }
 
 #user-dash-copyright{
     font-size:1.4rem;
     text-transform: lowercase;
+}
+
+.menu-title{
+    font-size:2.2rem;
+}
+
+.msg-btn-group{
+    button{
+        font-size:1.4rem;
+    }
 }

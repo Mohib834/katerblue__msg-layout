@@ -1,0 +1,31 @@
+.msg-count{
+    box-shadow:$shadow-vlight;
+
+    &__iconbox{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+
+        width:6rem;
+        height:6rem;
+        border-radius: 100px;
+        background:rgba($primary,.07);
+    }
+
+    &__desc{
+
+    }
+
+    &__desc-pri{
+        font-size:1.5rem;
+    }
+
+    &__desc-sec{
+        font-size:1.1rem;
+    }
+}
+
+
+.stats{
+    font-size:1.4rem;       
+}
