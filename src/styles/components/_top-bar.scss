@@ -4,9 +4,13 @@
     justify-content:flex-end;
     align-items:center; 
 
+
     &__social{
         font-size:1.8rem;
         position:relative;
+        i{
+            cursor:pointer;
+        }
     }
 
     &__notification{
@@ -22,10 +26,20 @@
         position:absolute;
         top:0;
         right:-0.3rem;
+
     }
 
     &__user{
-
+        img{
+            margin-right:1.2rem;
+        }
+        span{
+            font-size:1.4rem;
+            margin-right:.5rem;
+        }
+        i{
+            cursor:pointer;
+        }
     }
 
     &__user-img{

@@ -1,9 +1,7 @@
 #sidebar{
     flex: 0 0 18%;
     box-shadow:$shadow-light;
-    height:100vh;
 }
-
 
 #menu{
     span{
@@ -14,6 +12,34 @@
     ul > li{
         font-size:1.4rem;
         padding: .5rem 0 .5rem 1rem;
+        position:relative;
+
+        &:before{
+            content:'';
+            display:block;
+            position:absolute;
+            top:0;
+            left:0;
+            z-index: -1;
+            height:100%;
+            width:3px;
+            transform: scaleY(0);
+
+            transition:transform .3s,
+            width .4s cubic-bezier(1,0,0,1) .2s,
+            background-color .1s;
+
+            border-left:3px solid $primary;
+            background:rgba($primary,.1);
+            opacity:0;
+        }
+
+        &:hover::before{
+            opacity:1;
+            transform:scaleY(1);
+            background:rgba($primary,.1);
+            width:100%;
+        }
     }
     
     .active-link{
@@ -32,6 +58,13 @@
 }
 
 .main-content{
-    max-width:90%;
+    max-width:93%;
     margin:0 auto;
+}
+
+.current-menu{
+    & > .col-md-6{
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
 }
