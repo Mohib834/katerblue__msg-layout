@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+    <title>BoatRental</title>
+<link href="css/style.css" rel="stylesheet"></head>
+<body>
+
+    <div class="d-flex">
+
+        <div id="sidebar" class="d-flex flex-column border-right">
+            <img src="img/c266c90790afe2df7c3016a99b9734eb.png" alt="logo" class="img-fluid pt-1 pb-3 mx-3" width="55" height="55">
+            <span class="mb-5"></span>
+            <div id="menu">
+                <span class="d-block text-muted mb-5 ml-3 text-uppercase">Menu</span>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-capitalize text-dark">
+                            <i class="fas fa-columns mr-3"></i>
+                            dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-capitalize text-dark">
+                            <i class="fas fa-user mr-3"></i>
+                            my profile
+                        </a>
+                    </li>
+                    <li class="nav-item active-link">
+                        <a href="#" class="nav-link text-capitalize text-dark">
+                            <i class="fas fa-envelope mr-3"></i>
+                            messages
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-capitalize text-dark">
+                            <i class="fas fa-bookmark mr-3"></i>
+                            my bookings
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-capitalize text-dark">
+                            <i class="fas fa-heart mr-3"></i>
+                            my favourite
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="user-dash-copyright" class="mt-auto text-muted p-4 border-top">
+                &copy; 2019 katerBlue
+            </div>
+        </div>
+    
+        <div id="main" class="bg-light">
+            <!-- Top bar -->
+            <div class="top-bar bg-white">
+                <div class="searchbar mr-auto ml-2">
+                    <input type="text" class="searchbar__input" placeholder="Search Messages">
+                    <button class="searchbar__button">
+                        <i class="fas fa-search searchbar__icon"></i>
+                    </button>
+                </div>
+                <span class="top-bar__social text-muted mr-3">
+                    <i class="far fa-bell"></i>
+                    <span class="top-bar__notification"></span>
+                </span>
+                <div class="top-bar__user ml-5 mr-5 d-flex align-items-center">
+                    <img src="img/32a92aa7b07407faf9df10ece7dc3f4f.jpg" alt="user-image" class="img-fluid rounded-circle top-bar__user-img" width="40" height="40">
+                    <span class="text-muted">John Thompson</span>
+                    <i class="fas fa-angle-down text-muted"></i>
+                </div>
+            </div>
+            <!-- Message area -->
+            <main class="main-content py-4">
+                <div class="row d-flex align-items-center current-menu">
+                    <div class="col-md-6">
+                        <p class="menu-title">Messages</p>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="custom-pagination d-flex align-items-center">
+                            <i class="fas fa-angle-left text-muted"></i>
+                            <div class="pages px-4">
+                                <span class="page-current">1</span>
+                                -
+                                <span class="page-total">50</span>
+                            </div>
+                            <i class="fas fa-angle-right text-muted"></i>
+                        </div>
+                        <!-- Messages type button -->
+
+                        <div class="msg-btn-group ml-auto">
+                            <button class="btn btn-primary px-4 mr-3">All</button>
+                            <div class="btn-group">
+                                <button class="btn btn-light px-4">Unread</button>
+                                <button class="btn btn-light px-4">Archived</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message count -->
+                <div class="row msg-count py-5 mt-3 bg-white">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <div class="msg-count__iconbox text-primary">
+                            <i class="fas fa-inbox"></i>
+                        </div>
+                        <div class="msg-count__desc text-capitalize pl-4">
+                            <div class="msg-count__desc-pri">overall messages</div>
+                            <div class="msg-count__desc-sec"><span class="stats font-weight-bold mr-2">2341</span><span class="text-muted">This month</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <div class="msg-count__iconbox text-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <div class="msg-count__desc text-capitalize pl-4">
+                            <div class="msg-count__desc-pri">sent messages</div>
+                            <div class="msg-count__desc-sec"><span class="stats font-weight-bold mr-2">1493</span><span class="text-muted">This month</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <div class="msg-count__iconbox text-primary">
+                            <i class="fas fa-reply"></i>
+                        </div>
+                        <div class="msg-count__desc text-capitalize pl-4">
+                            <div class="msg-count__desc-pri">recieved messages</div>
+                            <div class="msg-count__desc-sec"><span class="stats font-weight-bold mr-2">895</span><span class="text-muted">This month</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Messages table -->
+                <div class="msg-table mt-4">
+                    <div class="row">
+                        <div class="msg-table__row bg-white col border rounded mb-2">
+                            <input type="checkbox" class="msg-table__checkbox">
+    
+                            <div class="top-bar__user msg-table__user">
+                                <img src="img/e9946bcabf69c41c6768c9b30263ebb0.jpg" alt="user-image"
+                                    class="img-fluid rounded-circle top-bar__user-img" width="40" height="40">
+                                <span class="text-muted text-capitalize">Joseph Kennedy</span>
+                            </div>
+    
+                            <div class="msg-table__msg">
+                                <span class="bg-light py-2">Selling</span>
+                                <p class="d-inline text-muted message-para">Lorem ipsum dolor sit amet consectetur adipisicing elit eligendi ex ut doloremque error...</p>
+                            </div>
+    
+                            <div class="msg-table__options">
+                                <span style="color:#aaa">&vellip;</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                            <div class="msg-table__row bg-white col border rounded mb-2">
+                                <input type="checkbox" class="msg-table__checkbox">
+        
+                                <div class="top-bar__user msg-table__user">
+                                    <img src="img/ee7f23d6cb6677f1dcc534bc67752105.jpg" alt="user-image"
+                                        class="img-fluid rounded-circle top-bar__user-img" width="40" height="40">
+                                    <span class="text-muted text-capitalize">Cassandra Black</span>
+                                </div>
+        
+                                <div class="msg-table__msg">
+                                    <span class="bg-light py-2">Charter</span>
+                                    <p class="d-inline text-muted message-para">Lorem ipsum dolor sit amet consectetur adipisicing elit eligendi ex ut doloremque error...</p>
+                                </div>
+        
+                                <div class="msg-table__options">
+                                    <span style="color:#aaa">&vellip;</span>
+                                </div>
+                            </div>
+                            
+                    </div>
+                    <div class="row">
+                            <div class="msg-table__row bg-white col border rounded mb-2">
+                                <input type="checkbox" class="msg-table__checkbox">
+        
+                                <div class="top-bar__user msg-table__user">
+                                    <img src="img/4d5bbf3e52203e7f5f1774e3b7ae71dd.jpg" alt="user-image"
+                                        class="img-fluid rounded-circle top-bar__user-img" width="40" height="40">
+                                    <span class="text-muted text-capitalize">Claude Ramos</span>
+                                </div>
+        
+                                <div class="msg-table__msg">
+                                    <span class="bg-light py-2">Charter</span>
+                                    <p class="d-inline text-muted message-para">Lorem ipsum dolor sit amet consectetur adipisicing elit eligendi ex ut doloremque error...</p>
+                                </div>
+        
+                                <div class="msg-table__options">
+                                    <span style="color:#aaa">&vellip;</span>
+                                </div>
+                            </div>
+                            
+                    </div>
+                    <div class="row">
+                        <div class="msg-table__row bg-white col border rounded mb-2">
+                            <input type="checkbox" class="msg-table__checkbox">
+
+                            <div class="top-bar__user msg-table__user">
+                                <img src="img/fc19e1e3d5722e867f99e0dea95e2bf5.jpg" alt="user-image"
+                                    class="img-fluid rounded-circle top-bar__user-img" width="40" height="40">
+                                <span class="text-muted text-capitalize">Joseph Kennedy</span>
+                            </div>
+
+                            <div class="msg-table__msg">
+                                <span class="bg-light py-2">Selling</span>
+                                <p class="d-inline text-muted message-para">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit eligendi ex ut doloremque error...</p>
+                            </div>
+
+                            <div class="msg-table__options">
+                                <span style="color:#aaa">&vellip;</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="msg-table__row bg-white col border rounded mb-2">
+                            <input type="checkbox" class="msg-table__checkbox">
+
+                            <div class="top-bar__user msg-table__user">
+                                <img src="img/ae2a45f8a2490b76016e88ff8100cc0c.jpg" alt="user-image"
+                                    class="img-fluid rounded-circle top-bar__user-img" width="40" height="40">
+                                <span class="text-muted text-capitalize">Dora Bishop</span>
+                            </div>
+
+                            <div class="msg-table__msg">
+                                <span class="bg-light py-2">Selling</span>
+                                <p class="d-inline text-muted message-para">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit eligendi ex ut doloremque error...</p>
+                            </div>
+
+                            <div class="msg-table__options">
+                                <span style="color:#aaa">&vellip;</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="msg-table__row bg-white col border rounded mb-2">
+                            <input type="checkbox" class="msg-table__checkbox">
+
+                            <div class="top-bar__user msg-table__user">
+                                <img src="img/a5c40b5ecd0a3fd38a97bcfa2117bc81.jpg" alt="user-image"
+                                    class="img-fluid rounded-circle top-bar__user-img" width="40" height="40">
+                                <span class="text-muted text-capitalize">Alma Rhodes</span>
+                            </div>
+
+                            <div class="msg-table__msg">
+                                <span class="bg-light py-2">Charter</span>
+                                <p class="d-inline text-muted message-para">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit eligendi ex ut doloremque error...</p>
+                            </div>
+
+                            <div class="msg-table__options">
+                                <span style="color:#aaa">&vellip;</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="msg-table__row bg-white col border rounded mb-2">
+                            <input type="checkbox" class="msg-table__checkbox">
+
+                            <div class="top-bar__user msg-table__user">
+                                <img src="img/f025345a00d65987a9a2f813c54c0611.jpg" alt="user-image"
+                                    class="img-fluid rounded-circle top-bar__user-img" width="40" height="40">
+                                <span class="text-muted text-capitalize">Andrew Mead</span>
+                            </div>
+
+                            <div class="msg-table__msg">
+                                <span class="bg-light py-2">Selling</span>
+                                <p class="d-inline text-muted message-para">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit eligendi ex ut doloremque error...</p>
+                            </div>
+
+                            <div class="msg-table__options">
+                                <span style="color:#aaa">&vellip;</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="msg-table__row bg-white col border rounded mb-2">
+                            <input type="checkbox" class="msg-table__checkbox">
+
+                            <div class="top-bar__user msg-table__user">
+                                <img src="img/2694abafaef4ab89dc89090e03b2620e.jpg" alt="user-image"
+                                    class="img-fluid rounded-circle top-bar__user-img" width="40" height="40">
+                                <span class="text-muted text-capitalize">Danny Ryan</span>
+                            </div>
+
+                            <div class="msg-table__msg">
+                                <span class="bg-light py-2">Selling</span>
+                                <p class="d-inline text-muted message-para">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit eligendi ex ut doloremque error...</p>
+                            </div>
+
+                            <div class="msg-table__options">
+                                <span style="color:#aaa">&vellip;</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="msg-table__row bg-white col border rounded mb-2">
+                            <input type="checkbox" class="msg-table__checkbox">
+
+                            <div class="top-bar__user msg-table__user">
+                                <img src="img/183bbe6f05cddf589a7b0afac3886683.jpg" alt="user-image"
+                                    class="img-fluid rounded-circle top-bar__user-img" width="40" height="40">
+                                <span class="text-muted text-capitalize">Hailey Stanley</span>
+                            </div>
+
+                            <div class="msg-table__msg">
+                                <span class="bg-light py-2">Charter</span>
+                                <p class="d-inline text-muted message-para">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit eligendi ex ut doloremque error...</p>
+                            </div>
+
+                            <div class="msg-table__options">
+                                <span style="color:#aaa">&vellip;</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="custom-pagination d-flex align-items-center justify-content-center mt-3">
+                    <i class="fas fa-angle-left text-muted"></i>
+                    <div class="pages px-4">
+                        <span class="page-current">1</span>
+                        -
+                        <span class="page-total">50</span>
+                    </div>
+                    <i class="fas fa-angle-right text-muted"></i>
+                </div>
+
+            </main>
+        </div>
+
+    </div>
+    
+
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>
